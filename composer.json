@@ -1,0 +1,36 @@
+{
+    "name": "redot/dotenv-editor",
+    "description": "Loads and edits .env files",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/redot-src/php-dotenv-editor/issues",
+        "source": "https://github.com/redot-src/php-dotenv-editor"
+    },
+    "keywords": ["php", "dotenv", "env", "editor"],
+    "autoload": {
+        "psr-4": {
+            "Redot\\DotenvEditor\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "vlucas/phpdotenv": "5.*"
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.21",
+        "laravel/pint": "^1.10"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest",
+        "pint": "./vendor/bin/pint"
+    },
+    "scripts-descriptions": {
+        "test": "Runs the tests",
+        "pint": "Lints the code"
+    }
+}
