@@ -16,23 +16,16 @@ class DotenvEditor
 
     /**
      * The path to the environment file.
-     *
-     * @var string
      */
     protected string $path;
 
     /**
      * Whether to backup the environment file.
-     *
-     * @var bool
      */
     protected bool $backup = false;
 
     /**
      * Create a new instance.
-     *
-     * @param string $path
-     * @param bool $backup
      */
     public function __construct(string $path, bool $backup = false)
     {
@@ -44,9 +37,6 @@ class DotenvEditor
 
     /**
      * Create a new instance.
-     *
-     * @param string $path
-     * @param bool $backup
      */
     public static function make(string $path, bool $backup = false): self
     {
@@ -74,8 +64,6 @@ class DotenvEditor
 
     /**
      * Get environment variable by key.
-     *
-     * @return string
      */
     public function get(string $key, string $default = ''): string
     {
@@ -84,9 +72,6 @@ class DotenvEditor
 
     /**
      * Set environment variable by key.
-     *
-     * @param string $key
-     * @param string $value
      */
     public function set(string $key, string $value): void
     {
