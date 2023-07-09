@@ -75,7 +75,7 @@ class DotenvEditor
     /**
      * Get environment variable by key.
      *
-     * @return array<string, string>
+     * @return string
      */
     public function get(string $key, string $default = ''): string
     {
@@ -85,7 +85,8 @@ class DotenvEditor
     /**
      * Set environment variable by key.
      *
-     * @param array<string, string> $env
+     * @param string $key
+     * @param string $value
      */
     public function set(string $key, string $value): void
     {
